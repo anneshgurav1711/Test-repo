@@ -1,0 +1,166 @@
+1)Java:
+Java is a programming language
+Java invented by James Gosling in 1995
+Java is loacted between c++ and python
+its a object oriented language
+its a platform independent
+its having wora(write once run anywhwre)
+java is human understandable language
+
+javac:
+Javac is a java compiler
+its help to run the program
+it converts source code into bytecode by the help of compiler in the JVM
+its located inside the JDK
+
+2)
+JDK:Java Development Kit
+Jdk is having the jre and jvm 
+By usig jdk the program will run
+
+JRE:Java Runtime environment
+JRE is help to store docs,libraries
+In jre the jvm is exist
+JRE is help to support runtime environment to the program
+
+JVM:Java Vertual Machine
+it help to convert .java extension into .class extension using compiler inside JVM
+jvm is invisible
+jvm will help to convert source code to bytecode
+
+3)
+Limitations of array:
+Array is a container which stores the similar type of data
+Array having homogenous data type storage
+Array will using the flower braces i.e, {}
+
+4)
+Class: 
+its the instance of the object
+its the blueprint
+class contains polymorphism
+Without class there is no program
+
+Object:
+Object is the real instance of class
+object will stores the data 
+
+Signature of the class:
+class class_name(){
+}
+
+5)
+.java file:                                                       .class file:
+it stores the data in .java extension                          It stores the data in .class extension
+.java stored before compilation                                .class stored after compilation
+.java is will be used by self                                  .class is used by programmer
+
+
+6)
+Method Signature:
+access specifier  non-access specifier  returntype  method_name(parameters) throws class_name class_name.
+
+Access specifiers:
+public
+protected
+private
+package default
+
+Non-Access Spesifier:
+static
+final
+abstarct
+
+returnType:
+void 
+data types:1)Primitive datatype 2)Non-Primitive Data type
+             *byte                  *Class names
+			 *short                 *String
+			 *int 
+			 *long
+			 *float
+			 *double
+			 *boolean
+			 *char
+
+Method_name(parameters)
+its a method which will give name to it and passing the arguments
+
+
+7)
+JAVA:
+Its a programming language
+Its a object oriented programming language
+its a platform independent
+it consists of wora
+wora=Write once run anywhwre
+its a human understandable language
+JAVA loacted between c++ and python
+
+8)
+Java IDE's:
+IDE:Integrated Development Environment
+Java IDE's:
+eclipse
+
+9)
+Variable:
+Variable is a container which store the data
+variable stores the reference of that data
+variable will not fixed it will be esaily modified
+variable store the date and its easily override
+
+variable types:
+1)Static variable
+2)local variable
+3)Instance variable
+4)Parametersized Variable
+
+1)Static variable:it will used static keyword
+2)local variable:it will be easily accesible wthin the method
+3)Instance variable
+4)Parametersized variable
+
+10)
+JAVA Keywords:
+byte short int long double float boolean character String true false static void public protected private final abstract 
+
+11)
+Class Variable:
+which declares the variable inside class
+class variable is a container which stores the data
+
+12)
+DataType:Data types are used in which we are going to use the reference of variable
+DataType: 
+1)Primitive Data Type
+byte:1 byte 
+short:2 bytes
+int:4 bytes
+long:8 bytes
+float:4 bytes
+double:8 bytes
+boolean:1 byte
+char:2 byte
+
+2)Non-Primitive datatype
+String, class_name, etc
+
+13)
+Dot Operator:
+Its a same like that of java
+
+14)
+Java features:
+java is a having independent platform
+java is oop language
+java container wora
+java is in between c++ and python
+its a human understandable language
+
+15)
+Base class of all classes:
+Polymorphism
+Inheritence
+Encapsulation
+Abstarct method
