@@ -1,0 +1,233 @@
+1)Explain Java Components?
+Ans)Java Components are JDK,JRE,JVM:
+*JDK::Java Development Kit
+    >consist of JRE,JVM and set of libraries.
+	>JDK will provide the  environvenment to develop the application.
+*JRE:Java DEvelopment Environment
+	>Its consits of JVM and set of libraries
+	>its physically exist.
+	>It provides the runtime environvenment to develop the software.
+*JVM:Java Virtual Machine
+	>Its consist of set of libraries.
+	>It phsically not exist.
+	>Java compiler converts sourceCode into byteCode and JVM will exicute the byteCode.
+	>During the time of byteCode execution JVM will provide runtime environvenment to execute the byteCode.
+	>JVM function:
+			*Loads the Bytecode
+			*Verifies the Bytecode
+			*Run the Bytecode
+	
+2)Explain Java Features?
+Ans)
+*Platform Independent
+	>Once compiled Bytecode can run on any platforms likes MacOs,Linux,Windows.
+	>Its run on priciple of WORA
+	>WORA:Write once and run Anywhere.
+*Simple:
+	>Its easy to learn and easy to understand
+	>Its will provide robust
+	>Syntax is very easy
+	>Run on any java platform
+*Secured:
+	>Its very secure because its have its own JVM.
+*Robust:
+	>Block of codes executed concurrently.
+
+	
+3)Explain constructors and its types?
+Ans)
+*Constructor are used to Intialize the instance Variables.
+*Constructor copy can be created by using new Kyeword.
+*Constructors are same name as a Class name.
+*Constructor are not having any returnType.
+*Constructor are used for chaining purpose.
+*Constructor are mainly having this and super Keywords.
+
+//Types of constructors:
+>Default constructor.
+>Parameterized Constructor.
+
+4)Explain Variables and its types?
+Ans)Variables are the continers which are used to store the data while the time of execution.
+//Types of variables:
+1)Class level variables
+	*Static variables
+	*Non-static variables or Instance variables.
+2)Method level variables
+	*Local variables
+	*Parameterized Variables.
+	
+5)Why java is not pure object oriented programming language?
+Ans)
+*Java is not purely object oriented programming language because its supports Primitive DataTypes.
+
+6)Explain dynamic binding and static binding?
+Ans)
+*Dynamic Binding in which programs runs concurrently
+*Static Binding in which programs runs by using concurrently but by using classNames.
+
+
+7)Explain OOP's concept?
+Ans)
+*OOP:Object Orineted Programming Language
+*OOPs are used to write a software in correct manner.
+*OOPs having 4 Principles:
+	1.Polymorphism
+	2.Encapsulation
+	3.Inheritance
+	4.Abstarction
+//Polymorphism:
+				>A class having same names with differnet forms.
+				>Poly means Many and Morphism means Forms.
+//Encapsulation:
+				>Hiding the data and giving access by using methods.
+				>In this Getters and Stters methods are used.
+				>Getters are used to get the objects
+				>setters are used to initialize the object
+//Inheritance:
+				>Use the properties of parent class in sub class by using extends keyword is called Inheritance
+				>Access the properties of parent class in sub class by using extends keyword.
+				>There are 4 types:
+					1.Single Inheritance
+					2. Multiple Inheritance
+					3.Multilevel Inheritance
+					4.Hirarchical Inheritance
+					5.Hybrid Inheritance
+//Abstarction:
+				>Hiding the implimentation and showing only functinality is called Abstarction
+				>Abstarction can be achieved by Making class as a abstact and method contains conctete and abstarct methods also..and contains static methods.
+				>Abstarction implimentation use by sub class by using inheritance.
+
+8)Write a program to count the number character in given string?
+Ans)
+
+
+public class CharacterCount {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = input.nextLine();
+        int count = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) != ' ') {
+                count++;
+            }
+        }
+
+        System.out.println("The number of characters in the string is: " + count);
+    }
+}
+
+
+
+9)Write a program to count the number of words in a given sentence?
+Ans)
+
+
+public class WordCount {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a sentence: ");
+        String sentence = input.nextLine();
+        int count = 1;
+
+        for (int i = 0; i < sentence.length(); i++) {
+            if (sentence.charAt(i) == ' ') {
+                count++;
+            }
+        }
+
+        System.out.println("The number of words in the sentence is: " + count);
+    }
+}
+
+
+10)write a program to reverse an array?
+Ans)
+public class ReverseArray {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        System.out.println("Original array: " + Arrays.toString(arr));
+
+        for (int i = 0; i < arr.length / 2; i++) {
+            int temp = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
+        }
+
+        System.out.println("Reversed array: " + Arrays.toString(arr));
+    }
+}
+
+
+
+11)Explain Interface?
+Ans)
+*Two standard classes are connected by the interfaceClass is called Interface.
+*Interface class only achieve 100% abstraction.
+*Interface class contains implicitily abstact methods and class also a abstact class.
+*Interface class will be implimented by sub class by using implimets keyword.
+*Interface class acts like a bridge to connect two standard classes.
+
+12)Explain Exception?
+Ans)
+*Exception is an exceptional event occured during execution of programs.
+*Exception envent created manually by using throws keyword.
+*Exception envent handled by using throwable keyword
+*Exception can be handles by using 
+		>try,catch,finally methods.
+*Exception will contains Exception,RuntimeException,ErrorException.
+
+13)Explain Acces-Specifiers?
+Ans)There are 4 access-specifiers are there:
+*Public:
+	>its a keyword.
+	>The properties and methods can be accessed anywhere.
+	>Public access-specifier will run on any class and any package.
+*Private:
+	>Its a keyword
+	>It can be accessed within the same class only
+	>it cannot give access to same package and differnet package
+*Protected:
+	>Its a keyword
+	>It can be accessed within the same package and outside the package only by sub class buy using extends keyword.
+	>It can be accessed in differnet package.
+*Default:
+	>Its a keyword
+	>It can be accessed within the same package and same class.
+	>default will provided by compiler if we not mentioned as default.
+	
+14)Difference between Abstraction and Interface?
+Ans)
+//Abstarction:
+	>Hide the implimentation and showing only functinality
+	>It will not give access to any of the sub class to impliment
+	>It will not connect two standard classes
+	>Access by using extends keyword.
+	
+//Interface:
+	>Hide the implimentation and give the access to sub class to impliment the method
+	>It will give access to any of the sub class to impliment
+	>It will not connect two standard classes
+	>Access by using impliments keyword
+	
+
+15)Write a program to get the sum of all digits? Ex:i/p:234 o/p:9
+Ans)
+public class SumOfDigits {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = input.nextInt();
+        int sum = 0;
+
+        while (num > 0) {
+            int digit = num % 10;
+            sum += digit;
+            num /= 10;
+        }
+
+        System.out.println("The sum of the digits is: " + sum);
+    }
+}
